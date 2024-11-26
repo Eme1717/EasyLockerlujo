@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyLocker - Consignas de Equipaje</title>
+    <style>
+        /* Estilo general */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #003366; /* Azul oscuro */
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #00509e; /* Azul más claro */
+            border-radius: 5px;
+        }
+
+        .hero {
+            background-image: url('images/hero-bg.jpg'); /* Fondo representativo */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 5rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0 0 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero button {
+            background-color: #ff6600; /* Naranja */
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #e65c00;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+
+        .features div {
+            max-width: 250px;
+        }
+
+        .features img {
+            height: 100px;
+            margin-bottom: 1rem;
+        }
+
+        .locations {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .locations h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .locations p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .city-item {
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .city-item img {
+            width: 100%;
+            border-radius: 10px;
+            height: auto;
+        }
+
+        .city-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/easylocker-logo.png" alt="EasyLocker Logo">
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#features">Servicios</a>
+            <a href="#locations">Ubicaciones</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Explora la ciudad sin preocuparte por tu equipaje</h1>
+        <p>Consignas seguras y convenientes en los puntos más céntricos.</p>
+        <button>Reservar ahora</button>
+    </section>
+
+    <section id="features" class="features">
+        <div>
+            <img src="images/security-icon.png" alt="Seguridad">
+            <h3>Seguridad Garantizada</h3>
+            <p>Tus pertenencias están protegidas las 24 horas con vigilancia.</p>
+        </div>
+        <div>
+            <img src="images/convenience-icon.png" alt="Conveniencia">
+            <h3>Acceso Fácil</h3>
+            <p>Ubicaciones estratégicas cerca de los puntos turísticos.</p>
+        </div>
+        <div>
+            <img src="images/flexibility-icon.png" alt="Flexibilidad">
+            <h3>Horarios Flexibles</h3>
+            <p>Accede a tus consignas en cualquier momento.</p>
+        </div>
+    </section>
+
+    <section id="locations" class="locations">
+        <h2>Nuestras Ubicaciones</h2>
+        <p>Encuentra la consigna más cercana a ti en las principales ciudades.</p>
+        <div class="cities">
+            <div class="city-item">
+                <img src="images/madrid.jpg" alt="Madrid">
+                <h4>Madrid</h4>
+            </div>
+            <div class="city-item">
+                <img src="images/barcelona.jpg" alt="Barcelona">
+                <h4>Barcelona</h4>
+            </div>
+            <div class="city-item">
+                <img src="images/sevilla.jpg" alt="Sevilla">
+                <h4>Sevilla</h4>
+            </div>
+            <div class="city-item">
+                <img src="images/malaga.jpg" alt="Málaga">
+                <h4>Málaga</h4>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 EasyLocker. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
